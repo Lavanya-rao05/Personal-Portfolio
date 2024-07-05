@@ -1,0 +1,163 @@
+.nav a,.button {
+  text-decoration: none;
+  background-color: rgb(104, 103, 103);
+  color: white;
+  padding: 10px 20px;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+h1 {
+  font-family: "Bona Nova SC", serif;
+  margin: 0;
+}
+.image {
+  height: 100vh;
+  background: url("img1.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px;
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.section-text,
+.section-image {
+  flex: 1;
+  margin: 20px;
+}
+
+.section-text {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 120px;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-menu,.skills__container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu-row,.skill-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project,.skill {
+  flex: 1;
+  padding: 10px;
+  padding-left: 60px;
+  border-radius: 2px;
+  background-color: lavender;
+  cursor: pointer;
+}
+.project:hover,
+.message-us:hover,
+.feedback:hover,
+.skill:hover {
+  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.message-us,
+h3 {
+  font-family: "LXGW WenKai Mono TC";
+  font-size: 20px;
+}
+
+.message {
+  display: flex;
+  gap: 20px;
+}
+
+.message-us,
+.feedback {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color:lavender;
+}
+
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.feedback button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 25px;
+  animation: progress-animation 2s ease-out forwards;
+}
+
+
