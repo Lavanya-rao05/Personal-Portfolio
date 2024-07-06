@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap"
@@ -13,154 +14,198 @@
     <link
         href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Playwrite+MX:wght@100..400&display=swap"
         rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Lavanya's Portfolio</title>
 </head>
 
-<body>
-    <div class="header">
-        <nav class="nav">
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<header>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="div-content">
+        <div class="content">
+            <h2>Hello there,<br />I'm Lavanya</h2>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a href="https://www.linkedin.com/in/lavanya-rao245" target="_blank" class="linkedin"><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Lavanya-rao05" target="_blank" class=" github"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a href="mailto:your-email@example.com" class="email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+                <a href="Lavanya_Resume--2.pdf" class="btn"><span>Resume</span></a>
+            </div>
+        </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="mine.jpg" alt="Your Photo">
+        </div>
     </div>
-    <div class="image">
-        <img src="" alt="">
+</section>
+
+
+
+
+
+<section id="about" style="background-color:#717bad;">
+    <h1 style="text-align: center;margin-left: 50px;font-size: 40px;"><i>About Me</i></h1>
+    <div class="section-content">
+        <div class="section-text">
+            <p><i>
+                    <p style="font-size: 20px;">I am a student at <b>St. Joseph Engineering College,
+                            Mangalore</b> majoring in <b>Computer Science and Engineering.</b> I have a strong
+                        passion for coding and enjoy working on various projects. My non-academic interests
+                        include expressing my creativity through drawing, singing, and crocheting. I am
+                        constantly exploring new ways to integrate my technical skills with my artistic hobbies.
+                    </p>
+                </i></p>
+        </div>
+        <div class="section-image">
+            <img src="img2.jpg" alt="Welcome to Our Site">
+        </div>
     </div>
-    <div class="content">
-        <section id="about" style="background-color:#717bad;">
-            <h1 style="text-align: center;margin-left: 50px;font-size: 40px;"><i>About Me</i></h1>
-            <div class="section-content">
-                <div class="section-text">
-                    <p><i>
-                            <p>I am a student at <b>St. Joseph Engineering College,
-                                    Mangalore</b> majoring in <b>Computer Science and Engineering.</b> I have a strong
-                                passion for coding and enjoy working on various projects. My non-academic interests
-                                include expressing my creativity through drawing, singing, and crocheting. I am
-                                constantly exploring new ways to integrate my technical skills with my artistic hobbies.
-                            </p>
-                        </i></p>
-                </div>
-                <div class="section-image">
-                    <img src="img2.jpg" alt="Welcome to Our Site">
+</section>
+
+<section id="projects">
+    <h1 style="text-align: center; margin: 50px; font-size: 40px;"><i>Projects</i></h1>
+    <div class="main-menu">
+        <div class="menu-row">
+            <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Frozen-Frenzy'"
+                style="cursor: pointer;">
+                <h3><i>Frozen Frenzy Project</i> | HTML, CSS</h3>
+            </div>
+            <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Snake-Game'"
+                style="cursor: pointer;">
+                <h3><i>Snake Game</i> | Python</h3>
+            </div>
+        </div>
+        <div class="menu-row">
+            <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Spotify-Playlist-Creator'"
+                style="cursor: pointer;">
+                <h3><i>Spotify Playlist Creator</i> | Python</h3>
+            </div>
+            <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Guessing-Game'"
+                style="cursor: pointer;">
+                <h3><i>Guessing Game</i> | Python</h3>
+            </div>
+        </div>
+        <div class="menu-row">
+            <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/AgroCulture'"
+                style="cursor: pointer;">
+                <h3><i>AgroCulture</i> | DBMS </h3>
+            </div>
+            <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Personal-Portfolio'"
+                style="cursor: pointer;">
+                <h3><i>My Personal Portfolio</i> | HTML, CSS, JS</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills" style="background-color:#717bad;">
+    <h1 style="text-align: center; margin: 50px; font-size: 40px;"><i>Skills</i></h1>
+    <div class="skills__container">
+        <div class="skill-row">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
                 </div>
             </div>
-        </section>
-
-        <section id="projects">
-            <h1 style="text-align: center; margin: 50px; font-size: 40px;"><i>Projects</i></h1>
-            <div class="main-menu">
-                <div class="menu-row">
-                    <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Frozen-Frenzy'"
-                        style="cursor: pointer;">
-                        <h3><i>Frozen Frenzy Project</i> | HTML, CSS</h3>
-                    </div>
-                    <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Snake-Game'"
-                        style="cursor: pointer;">
-                        <h3><i>Snake Game</i> | Python</h3>
-                    </div>
-                </div>
-                <div class="menu-row">
-                    <div class="project"
-                        onclick="location.href='https://github.com/Lavanya-rao05/Spotify-Playlist-Creator'"
-                        style="cursor: pointer;">
-                        <h3><i>Spotify Playlist Creator</i> | Python</h3>
-                    </div>
-                    <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Guessing-Game'"
-                        style="cursor: pointer;">
-                        <h3><i>Guessing Game</i> | Python</h3>
-                    </div>
-                </div>
-                <div class="menu-row">
-                    <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/AgroCulture'"
-                        style="cursor: pointer;">
-                        <h3><i>AgroCulture</i> | DBMS </h3>
-                    </div>
-                    <div class="project" onclick="location.href='https://github.com/Lavanya-rao05/Personal-Portfolio'"
-                        style="cursor: pointer;">
-                        <h3><i>My Personal Portfolio</i> | HTML, CSS, JS</h3>
-                    </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
                 </div>
             </div>
-        </section>
-
-        <section id="skills"  style="background-color:#717bad;">
-            <h1 style="text-align: center; margin: 50px; font-size: 40px;"><i>Skills</i></h1>
-            <div class="skills__container">
-                <div class="skill-row">
-                    <div class="skill">
-                        <h3>HTML</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <h3>CSS</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill">
-                        <h3>JavaScript</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <h3>Python</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill">
-                        <h3>React</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <h3>Java</h3>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-
-        <section id="contact">
-            <h1 style="text-align: center;margin: 50px;font-size: 40px;"><i>Contact Me</i></h1>
-            <div class="message">
-                <div class="message-us" style="font-size: 20px;">
-                    <i>
-                        <p><b>Get In Touch..</b></p>
-                        <p>Phone: <a href="tel:+919916067028">+91 99160 67028</a></p>
-                        <p>Email: <a href="mailto:Lavanyarao0502@gmail.com">Lavanyarao0502@gmail.com</a></p>
-                        <p>Address: Mangalore</p>
-                        <p>GitHub: <a href="https://github.com/Lavanya-rao05" target="_blank">Lavanya-rao05</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/lavanya-rao245" target="_blank">Lavanya
-                                Rao</a></p>
-                        <p>Resume: <a href="Lavanya_Resume--2.pdf" download="resume.pdf">
-                                <button class="button">Download Resume</button></a></p>
-                    </i>
-                </div>
-                <div class="feedback">
-                    <form action="mailto:Lavanyarao0502@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" name="name" placeholder="Name"><br>
-                        <input type="email" name="email" placeholder="Email"><br>
-                        <input type="text" name="subject" placeholder="Subject"><br>
-                        <textarea name="message" placeholder="Message"></textarea><br>
-                        <button type="submit">Submit</button>
-                    </form>
+        </div>
+        <div class="skill-row">
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
                 </div>
             </div>
-        </section>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="education">
+    <h1 style="text-align: center; margin: 50px; font-size: 40px;"><i>Education</i></h1>
+    <div class="box__container">
+        <div class="box">
+            <div class="box-content">
+                <h3>B.E. in Computer Science and Engineering | 8.16 CGPA</h3>
+                <h4>St Joseph Engineering College Mangaluru, Karnataka</h4>
+                <h4>2022-Present </h4>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h3>Diploma in Computer Science and Engineering | 81.7% </h3>
+                <h4>Govt. Polytechnic for Women, Karnataka</h4>
+                <h4>May-2022 </h4>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h3>Shree Narayana Guru English Medium School Katipalla,Kaikamba</h3>
+                <h4>X - SSLC | 80.64%</h4>
+                <h4>Apr-2019</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="background-color:#717bad;">
+        <h1 style=" text-align: center;margin: 50px;font-size: 40px; "><i>Feedback</i></h1>
+        <div class=" message">
+    <div class="message-us">
+        <img src="images.jpg" alt=""/>
+    </div>
+    <div class="feedback">
+        <form action="mailto:Lavanyarao0502@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="text" name="subject" placeholder="Subject"><br>
+            <textarea name="message" placeholder="Message" rows="8"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+</section>
 
 <script src="script.js"></script>
 </body>
