@@ -1,6 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
 
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 2rem 9%;
 }
 .heading {
@@ -90,8 +98,8 @@ header .navbar ul li a:hover {
   /* display: flex; */
   justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
-  padding: 0 9%;
+  /* min-height: 100vh; */
+  padding: 5%;
 }
 
 .home .content {
@@ -121,7 +129,6 @@ header .navbar ul li a:hover {
   font-weight: 800;
   color: #002057;
 }
-
 
 .home .content p {
   font-size: 2.5rem;
@@ -158,7 +165,6 @@ header .navbar ul li a:hover {
 .home .btn:hover i {
   transform: translateX(5px);
 }
-
 
 .socials {
   margin-top: 3rem; /* Adjust spacing as needed */
@@ -213,7 +219,6 @@ header .navbar ul li a:hover {
   }
 }
 
-
 .nav a,
 .button {
   text-decoration: none;
@@ -262,7 +267,8 @@ html {
   height: 100%;
 }
 
-.section-content,.div-content {
+.section-content,
+.div-content {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -373,7 +379,7 @@ h3 {
 #education {
   text-align: center;
   background-color: white;
-  padding: 50px 0; 
+  padding: 50px 0;
 }
 
 .box {
@@ -386,10 +392,10 @@ h3 {
 
 .box-content {
   text-align: left;
-  background-color: lavender; 
+  background-color: lavender;
 }
 
-
 .message-us img {
-  width: 100%; 
-  object-fit: cover; }
+  width: 100%;
+  object-fit: cover;
+}
