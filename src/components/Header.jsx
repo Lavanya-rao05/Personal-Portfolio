@@ -7,7 +7,6 @@ const Header = () => {
 
   const toggleMenu = () => setNavOpen(!navOpen);
 
-  // Set active nav item on scroll or link click
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -26,36 +25,42 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle navigation link click to prevent page reload and smooth scroll
   const handleLinkClick = (e, href) => {
-    e.preventDefault(); // Prevent the default anchor link behavior
+    e.preventDefault();
     const targetSection = document.querySelector(href);
     if (targetSection) {
       targetSection.scrollIntoView({
         behavior: "smooth",
-        block: "start", // Ensures the target section is aligned at the top
+        block: "start",
       });
     }
-    setActive(href); // Update active state for highlighting
-    setNavOpen(false); // Close the mobile menu if it's open
+    setActive(href);
+    setNavOpen(false);
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-80 shadow-md font-['Bona_Nova_SC']">
-      <div className="flex items-center justify-center px-6 md:px-16 py-4">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white bg-opacity-90 shadow-md font-['Bona_Nova_SC'] backdrop-blur-sm">
+      <div className="relative flex items-center justify-center px-6 md:px-16 py-4">
         {/* Mobile menu icon */}
         <div
-          className="absolute left-6 text-3xl text-[#18023f] md:hidden cursor-pointer"
+          className="absolute left-6 top-1/2 -translate-y-1/2 text-3xl text-[#18023f] md:hidden cursor-pointer"
           onClick={toggleMenu}
+          aria-label="Toggle navigation menu"
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && toggleMenu()}
         >
           {navOpen ? <FaTimes /> : <FaBars />}
         </div>
 
         {/* Nav Menu */}
         <nav
-          className={`${
-            navOpen ? "right-0" : "-right-full"
-          } md:static md:flex md:items-center absolute top-20 md:top-0 bg-[#0e0f31] md:bg-transparent w-3/4 md:w-auto h-full md:h-auto flex flex-col md:flex-row gap-6 px-6 md:px-0 transition-all duration-300 ease-in-out`}
+          className={`
+            fixed top-16 left-0 h-[calc(100vh-4rem)] w-3/4 bg-[#0e0f31] md:static md:h-auto md:w-auto md:bg-transparent
+            flex flex-col md:flex-row gap-6 px-6 md:px-0 py-8 md:py-0
+            transition-transform duration-300 ease-in-out
+            ${navOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0
+          `}
         >
           {[
             ["Home", "#home"],
@@ -68,12 +73,17 @@ const Header = () => {
             <a
               key={index}
               href={href}
-              className={`text-xl md:text-2xl font-semibold w-full md:w-auto text-left md:text-center pb-1 md:pb-0 transition-all border-b-0 hover:border-b-2 ${
-                active === href
-                  ? "text-[#011aff] border-b-2 border-[#011aff]"
-                  : "text-white md:text-[#0e2431] hover:text-[#011aff] hover:border-[#011aff]"
-              }`}
-              onClick={(e) => handleLinkClick(e, href)} // Use the custom scroll function
+              onClick={(e) => handleLinkClick(e, href)}
+              className={`
+                text-xl md:text-2xl font-semibold w-full md:w-auto text-left md:text-center
+                pb-2 md:pb-0 border-b-2 md:border-b-0
+                transition-colors duration-200
+                ${
+                  active === href
+                    ? "text-[#011aff] border-[#011aff]"
+                    : "text-white md:text-[#0e2431] hover:text-[#011aff] hover:border-[#011aff]"
+                }
+              `}
             >
               {title}
             </a>

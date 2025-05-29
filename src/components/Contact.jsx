@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-16 text-gray-800">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Contact Me!</h2>
+        <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Contact Me</h2>
         <div className="flex flex-col items-center">
           <form
             action="https://formspree.io/f/meoaaara"  // 👉 replace with your Formspree ID
