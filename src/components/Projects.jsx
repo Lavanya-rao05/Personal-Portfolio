@@ -15,8 +15,20 @@ const projects = [
   {
     title: "ZeroWasteX Smart Waste Disposal System",
     tech: "MERN Stack, OpenRouteService API",
-    link: "https://github.com/Lavanya-rao05/ZeroWasteX-Smart-Waste-Disposal-System",
+    link: "https://zero-waste-x.netlify.app/",
     image: "/assets/zero-waste.jpg",
+  },
+  {
+    title: "WorldExplorer: AI-Powered Smart Travel Planner ",
+    tech: "MERN Stack, Gemini API, Framer Motion UI, OpenRouteService API",
+    link: "https://worldexplorer-umber.vercel.app/",
+    image: "/assets/world-explorer.jpg",
+  },
+   {
+    title: "DevMind: Second Brain for Developers",
+    tech: " Python, Streamlit, Sentence Transformers, ChromaDB",
+    link: "https://github.com/Lavanya-rao05/DevMind",
+    image: "/assets/devmind.jpg",
   },
   {
     title: "PCB Defect Detection",
@@ -27,7 +39,7 @@ const projects = [
   {
     title: "Amazon Clone",
     tech: "React, HTML, CSS, Bootstrap, JavaScript",
-    link: "https://github.com/Lavanya-rao05/Amazon-Clone",
+    link: "https://amazon-clone-x.netlify.app/",
     image: "/assets/amazon.jpg",
   },
   {
@@ -39,7 +51,7 @@ const projects = [
   {
     title: "MovieVerse",
     tech: "React, Tailwind CSS, Flask, Python, API",
-    link: "https://github.com/Lavanya-rao05/MovieVerse",
+    link: "https://movie-verse-delta-six.vercel.app/",
     image: "/assets/movieverse.jpg",
   },
   {
@@ -51,7 +63,7 @@ const projects = [
   {
     title: "Frozen-Frenzy",
     tech: "HTML, CSS, Javascript",
-    link: "https://github.com/Lavanya-rao05/Frozen-Frenzy",
+    link: "https://lavanya-rao05.github.io/Frozen-Frenzy/",
     image: "/assets/frozen-frenzy.jpg",
   },
 ];
