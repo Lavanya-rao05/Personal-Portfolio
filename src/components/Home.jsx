@@ -7,18 +7,18 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse md:flex-row items-center justify-center gap-16 px-6 md:px-[10%] py-20 bg-white font-['Bona_Nova_SC'] md:min-h-screen"
+      className="flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-[10%] py-20 bg-[#f5f3ffz] font-['Bona_Nova_SC'] md:min-h-screen"
     >
       {/* Left Content */}
       <div className="flex-1 z-10 text-center md:text-left animate-fadeInUp">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#002057] mb-6 leading-tight">
           Hello there,
-          <br /> I'm <span className=" text-blue-700">Lavanya</span>
+          <br /> &nbsp;&nbsp;&nbsp; I'm <span className=" text-blue-700">Lavanya</span>
         </h2>
 
         {/* Social Icons */}
         <div className="mt-8 mb-6">
-          <ul className="flex justify-center md:justify-start gap-6">
+          <ul className="flex justify-center md:justify-start gap-6 md:pl-6">
             <li>
               <a
                 href="https://www.linkedin.com/in/lavanya-rao245"
@@ -61,12 +61,11 @@ const Home = () => {
       </div>
 
       {/* Profile Image */}
-      {/* Profile Image */}
       <div className="flex-1 flex justify-center md:justify-end animate-fadeIn hidden md:flex">
         <img
           src={myPic}
           alt="Lavanya"
-          className="w-52 sm:w-64 md:w-[70%] max-w-[300px] rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover"
+          className="w-52 sm:w-64 md:w-[70%] max-w-[500px] rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 object-cover"
           draggable="false"
         />
       </div>

@@ -5,7 +5,7 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">Contact Me</h2>
         <div className="flex flex-col items-center">
           <form
-            action="https://formspree.io/f/meoaaara"  // 👉 replace with your Formspree ID
+            action="https://formspree.io/f/xvgaennr" 
             method="POST"
             className="space-y-6 max-w-2xl w-full"
           >

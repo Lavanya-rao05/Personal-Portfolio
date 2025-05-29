@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-6 sm:px-12 bg-white text-[#1a202c] font-['Bona_Nova_SC']"
+      className="py-20 px-6 sm:px-12 bg-[#f6f6f8] text-[#1a202c] font-['Bona_Nova_SC']"
     >
       {/* Section Heading */}
       <h1 className="text-4xl sm:text-5xl font-extrabold text-center text-blue-700 mb-12 tracking-wide">

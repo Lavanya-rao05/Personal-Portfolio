@@ -94,7 +94,7 @@ const Projects = () => {
         >
           {projects.map((project, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-lg overflow-hidden shadow-md transition-all duration-300">
+              <div className="bg-[#f6f6f8] rounded-lg overflow-hidden shadow-md transition-all duration-300">
                 <div
                   className="h-48 bg-cover bg-center"
                   style={{ backgroundImage: `url(${project.image})` }}

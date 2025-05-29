@@ -1,1 +1,6 @@
 @import "tailwindcss";
+/* Soothing lavender-ish background for the whole page */
+body {
+  background-color: #f5f3ff; /* soft lavender tone */
+
+}
